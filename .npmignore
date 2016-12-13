@@ -1,0 +1,6 @@
+.gitignore
+.DS_Store
+*.yml
+example/
+test/
+npm-debug.log
