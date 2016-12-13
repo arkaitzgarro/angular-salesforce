@@ -24,7 +24,7 @@ Here is a simple which allows you to include your own `deploymentId` and `organi
     'ngSalesforce'
   ])
 
-  // Configure your $intercom module with appID
+  // Configure your $salesforce module
   .config(function($salesforceProvider) {
     $salesforceProvider
       .onlineButtonId('liveagent_button_online_uniqueId')
