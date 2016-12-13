@@ -1,0 +1,37 @@
+{
+  "name": "angular-salesforce",
+  "version": "1.0.0",
+  "description": "An Angular.js wrapper for Salesforce providing a simple and familiar API for Angular Developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "standard": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkaitzgarro/angular-salesforce.git"
+  },
+  "keywords": [
+    "angular",
+    "salesforce"
+  ],
+  "author": "Arkaitz Garro <arkaitz.garro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkaitzgarro/angular-salesforce/issues"
+  },
+  "homepage": "https://github.com/arkaitzgarro/angular-salesforce#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "standard": "^8.6.0"
+  },
+  "standard": {
+    "globals": [
+      "angular",
+      "define",
+      "describe",
+      "it",
+      "expect"
+    ]
+  }
+}
