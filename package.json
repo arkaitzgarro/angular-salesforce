@@ -4,8 +4,9 @@
   "description": "An Angular.js wrapper for Salesforce providing a simple and familiar API for Angular Developer.",
   "main": "index.js",
   "scripts": {
+    "standard": "standard --fix",
     "test": "standard",
-    "standard": "standard --fix"
+    "uglify": "uglifyjs angular-salesforce.js -o angular-salesforce.min.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   "homepage": "https://github.com/arkaitzgarro/angular-salesforce#readme",
   "devDependencies": {
     "jasmine": "^2.5.2",
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "uglify-js": "^2.7.5"
   },
   "standard": {
     "globals": [
