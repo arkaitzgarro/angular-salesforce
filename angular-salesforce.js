@@ -37,6 +37,7 @@
   }
 
   var settings = {
+    buttonId: '',
     onlineButtonId: '',
     offlineButtonId: '',
     chatUrl: '',
