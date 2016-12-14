@@ -96,7 +96,7 @@
             })
           })
         },
-        startChatWithWindow: function (buttonId) {
+        startChatWithWindow: function () {
           scriptLoaded.promise.then(function () {
             global.liveagent.startChatWithWindow(settings.buttonId, settings.buttonId)
           })
