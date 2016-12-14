@@ -28,9 +28,10 @@ Here is a simple which allows you to include your own `deploymentId` and `organi
   // Configure your $salesforce module
   .config(function($salesforceProvider) {
     $salesforceProvider
+      .buttonId('uniqueId')
       .onlineButtonId('liveagent_button_online_uniqueId')
       .offlineButtonId('liveagent_button_offline_uniqueId')
-      .chatUrl('https://d.la2w1cs.salesforceliveagent.com/chat')
+      .chatUrl('https://domain.salesforceliveagent.com/chat')
       .deploymentId('deploymentId')
       .organisationId('organisationId')
   })
@@ -40,7 +41,7 @@ Here is a simple which allows you to include your own `deploymentId` and `organi
   })
   .controller('MainCtrl', function($scope, $salesforce) {
     $scope.launchChat = function () {
-      $salesforce.startChatWithWindow()
+      $salesforce.startChatWithWindow('uniqueId')
     }
   });
 </script>
