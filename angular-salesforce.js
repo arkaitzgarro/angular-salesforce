@@ -99,6 +99,9 @@
           scriptLoaded.promise.then(function () {
             global.liveagent.startChatWithWindow(settings.buttonId, settings.buttonId)
           })
+        },
+        getSid: function () {
+          return global.liveagent.getSid()
         }
       }
 
