@@ -18,8 +18,11 @@
   function loadScript (url, callback) {
     if (!document) { return }
     var script = document.createElement('script')
-    var eventListener = script.addEventListener || script.attachEvent
-    eventListener('load', function (event) { callback(null, event) }, false)
+    if (script.addEventListener) {
+      script.addEventListener('load', function (event) { callback(null, event) }, false)
+    } else {
+      script.attachEvent('load', function (event) { callback(null, event) }, false)
+    }
     script.type = 'text/javascript'
     script.async = true
     script.src = url
@@ -77,7 +80,7 @@
       }
 
       if (!global.liveagent) {
-        loadScript(scriptConfig.scriptUrl, scriptLoaded.resolve)
+        loadScript(scriptConfig.scriptUrl, function () { scriptLoaded.resolve })
       }
 
       var methods = {
