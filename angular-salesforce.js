@@ -80,7 +80,7 @@
       }
 
       if (!global.liveagent) {
-        loadScript(scriptConfig.scriptUrl, function () { scriptLoaded.resolve })
+        loadScript(scriptConfig.scriptUrl, function () { scriptLoaded.resolve() })
       }
 
       var methods = {
